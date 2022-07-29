@@ -1,3 +1,5 @@
+//Portlarla ilgili bilgiler.
+
 Services
 	-catalogAPI => 5011
 	-photostockAPI => 5012
@@ -6,3 +8,4 @@ Services
 identityserver => 5001
 
 Redis => 6379
+

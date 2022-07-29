@@ -35,7 +35,7 @@ namespace FreeCourse.Services.Discount.Controllers
         }
 
         [HttpGet]
-        [Route("/api/[controller]/[action]/{code}")]
+        [Route("/api/[controller]/[action]/{code}")] //Acrion yerine buradaki isim de yazılabilir.
         public async Task<IActionResult> GetByCode(string code)
         {
             var userId = sharedIdentityService.GetUserId;

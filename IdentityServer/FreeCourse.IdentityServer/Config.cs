@@ -16,7 +16,7 @@ namespace FreeCourse.IdentityServer
             new ApiResource("resource_catalog"){Scopes={"catalog_fullpermission"}},
             new ApiResource("resource_photo_stock"){Scopes={"photo_stock_fullpermission"}},            
             new ApiResource("resource_basket"){Scopes={"basket_fullpermission"}},
-            new ApiResource("resource_discount"){Scopes={"discount_fullpermission","discount_read","discount_write"}},
+            new ApiResource("resource_discount"){Scopes={"discount_fullpermission","discount_read","discount_write"}}, // örnek olarak yazıldı read/write
 
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             

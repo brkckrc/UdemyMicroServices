@@ -38,12 +38,12 @@ namespace FreeCourse.Services.Discount
             var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
 
-            //var test = new AuthorizationPolicyBuilder().RequireClaim("scope", "discount_read");
+            //var test = new AuthorizationPolicyBuilder().RequireClaim("scope", "discount_read"); // sadece okumayla ilgili yetki verecek olsaydık böyle kullanırdık
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 options.Authority = Configuration["IdentityServerURL"];
-                options.Audience = "resource_basket";
+                options.Audience = "resource_discount";
                 options.RequireHttpsMetadata = false;
             }); //üyelik sistemlerinde şema kavramı kullanılır.
 

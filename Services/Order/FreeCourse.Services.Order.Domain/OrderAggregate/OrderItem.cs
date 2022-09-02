@@ -14,6 +14,12 @@ namespace FreeCourse.Services.Order.Domain.OrderAggregate
         public string PictureUrl { get; set; }
         public decimal Price { get; set; }
 
+
+        public OrderItem()
+        {
+
+        }
+
         //public int OrderId { get; set; } efcore db'de tanımlayacak
         public OrderItem(string productId, string productName, string pictureUrl, decimal price)
         {

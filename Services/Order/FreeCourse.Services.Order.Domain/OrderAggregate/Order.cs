@@ -19,6 +19,11 @@ namespace FreeCourse.Services.Order.Domain.OrderAggregate
         private readonly List<OrderItem> _orderItems;
         public IReadOnlyCollection<OrderItem> OrderItems => _orderItems;
 
+        //Lazy loading yapabilmek için default const. eklendi Migration için hata veriyordu.
+        public Order()
+        {
+
+        }
         public Order (string buyerId, Address address)
         {
             _orderItems = new List<OrderItem> ();
